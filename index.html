@@ -408,41 +408,30 @@
         </div>
         <!-- call history section -->
         <div class="card-right col-span-12 md:col-span-3">
-          <div
-            id="call-history-id"
-            class="call-history shadow-md bg-white p-5 h-full rounded-lg"
-          >
-            <div class="call-history-heading flex justify-between items-center">
+          <div class="call-history shadow-md bg-white p-5 h-full rounded-lg">
+            <!-- Heading & Clear Button (always visible) -->
+            <div
+              class="call-history-heading flex justify-between items-center mb-4"
+            >
               <p class="font-bold">
-                <span><i class="fa-regular fa-clock mr-2"></i></span>Call
-                History
+                <span><i class="fa-regular fa-clock mr-2"></i></span>
+                Call History
               </p>
               <button
-                class="copy-container font-bold text-white bg-[#00A63E] rounded-full px-9 py-3"
+                id="clear-history-btn"
+                class="call-history-btn font-bold text-white bg-[#00A63E] rounded-full px-9 py-3"
               >
                 Clear
               </button>
             </div>
-            <!-- 1st -->
-            <!-- <div
-              class="call-history-body mt-5 flex justify-between items-center bg-[#F5F5F5] rounded-lg p-2"
+
+            <!-- History List (dynamic, JS will append here) -->
+            <div
+              id="call-history-id"
+              class="space-y-2 text-gray-700 text-sm min-h-[50px]"
             >
-              <div>
-                <p>Fire Service Number</p>
-                <p>999</p>
-              </div>
-              <p>time</p>
-            </div> -->
-            <!-- 2nd -->
-            <!-- <div
-              class="call-history-body mt-5 flex justify-between items-center bg-[#F5F5F5] rounded-lg p-2"
-            >
-              <div>
-                <p>Fire Service Number</p>
-                <p>999</p>
-              </div>
-              <p>time</p>
-            </div> -->
+              <p class="text-gray-400 italic">No calls yet</p>
+            </div>
           </div>
         </div>
       </div>

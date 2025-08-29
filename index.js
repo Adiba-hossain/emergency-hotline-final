@@ -16,6 +16,10 @@ let defaultCoinNumber = parseInt(defaultCoin.innerText);
 
 const callHistoryContainer = document.getElementById("call-history-id");
 
+const clearHistoryBtn = document.getElementById("clear-history-btn");
+
+callHistoryContainer.innerHTML = "";
+
 for (const callButton of callButtons) {
   callButton.addEventListener("click", function () {
     if (defaultCoinNumber < 20) {
@@ -49,3 +53,7 @@ for (const callButton of callButtons) {
     callHistoryContainer.appendChild(newCallDiv);
   });
 }
+// clear history
+clearHistoryBtn.addEventListener("click", function () {
+  callHistoryContainer.innerHTML = "";
+});
