@@ -1,0 +1,20 @@
+.hind-madurai-bold {
+  font-weight: 700;
+}
+.hind-madurai-semi-bold {
+  font-weight: 600;
+}
+.inter-semi-bold {
+  font-weight: 600;
+}
+.inter-extra-bold {
+  font-weight: 800;
+}
+.bg-linear-hero {
+  background: linear-gradient(
+    90deg,
+    rgba(1.251827359199524, 49.64006805419922, 34.606834411621094, 1),
+    rgba(0, 103, 71, 1) 50%,
+    rgba(1, 50, 35, 1) 100%
+  );
+}

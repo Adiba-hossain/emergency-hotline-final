@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emergency-Hotline</title>
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./style.css" />
+    <!--Hind Madurai Bold Font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Inter-Semi bold font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind & DaisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <!-- Navbar section -->
+    <nav
+      class="flex flex-col md:flex-row justify-between items-center w-11/12 mx-auto my-6"
+    >
+      <!-- Navbar left -->
+      <div class="navbar-left-container flex items-center gap-2 pb-4 md:pb-0">
+        <img
+          class="w-12"
+          src="./assets/logo.png"
+          alt="This is the logo of the website"
+        />
+        <h1 class="font-extrabold text-[#006747]">Emergency <br />Service</h1>
+      </div>
+      <!-- NavBar Right -->
+      <div class="navbar-right-container flex items-center gap-5">
+        <div
+          class="heart-container flex gap-2 bg-[#ECFFF0] rounded-full px-9 py-3"
+        >
+          <span class="inter-extra-bold text-black">0</span>
+          <img
+            class="w-6"
+            src="./assets/heart.png"
+            alt="This is the heart icon"
+          />
+        </div>
+        <div
+          class="coin-container flex gap-2 bg-[#ECFFF0] rounded-full px-9 py-3"
+        >
+          <span class="text-black inter-extra-bold">100</span>
+          <img
+            class="w-6"
+            src="./assets/coin.png"
+            alt="This is the coin icon"
+          />
+        </div>
+        <div
+          class="copy-container font-bold text-white bg-[#00A63E] rounded-full px-9 py-3"
+        >
+          <span>2</span>
+          <span>Copy</span>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section
+      class="hero-container w-full text-center bg-linear-hero text-white py-5"
+    >
+      <img
+        class="mx-auto w-24"
+        src="./assets/logo-dark.png"
+        alt="This is the dark logo of the hero section"
+      />
+      <h1 class="hind-madurai-bold text-3xl mb-3">
+        Emergency Service Directory
+      </h1>
+      <p class="hind-madurai-semi-bold">
+        Government Emergency Services at Your Fingertip – A Project by
+        Government of the People’s Republic of Bangladesh
+      </p>
+    </section>
+    <!-- Main section stats here -->
+    <section></section>
+  </body>
+  <script src="./index.js"></script>
+</html>
