@@ -57,3 +57,29 @@ for (const callButton of callButtons) {
 clearHistoryBtn.addEventListener("click", function () {
   callHistoryContainer.innerHTML = "";
 });
+// copy section
+
+const copyButtons = document.getElementsByClassName("copy-btn");
+
+const copyCountElement = document.getElementById("copy-count");
+let copyCount = parseInt(copyCountElement.innerText);
+
+for (const copyButton of copyButtons) {
+  copyButton.addEventListener("click", function () {
+    const card = copyButton.parentNode.parentNode;
+
+    const phoneNumber = card.querySelector(".ph-num").innerText;
+
+    navigator.clipboard
+      .writeText(phoneNumber)
+      .then(() => {
+        alert(`📋 Copied ${phoneNumber} to clipboard!`);
+
+        copyCount++;
+        copyCountElement.innerText = copyCount;
+      })
+      .catch((err) => {
+        console.error("Failed to copy: ", err);
+      });
+  });
+}
